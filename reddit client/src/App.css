@@ -1,0 +1,57 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #242323;
+  color:aliceblue;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-container {
+  margin-top: 40px;
+  background-color: steelblue;
+  display: flex;
+  flex: 1;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-description {
+  color: black;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  padding: 20px;
+}
+
+.apiLink:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 1300px) {
+  .content {
+    justify-content: flex-start;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .content {
+    justify-content: center;
+  }
+}
